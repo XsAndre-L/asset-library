@@ -4,6 +4,11 @@ Every push to `xserver` builds the Dockerfile and publishes a Linux AMD64 image
 to Docker Hub. Other branches and tag pushes do not publish through this workflow.
 Publishing does not restart or deploy an XServer service.
 
+The original GHCR workflow is preserved unchanged as
+`.github/workflows/docker-image.yaml.disabled`. Its disabled extension prevents
+GitHub Actions from running it. The active workflow is
+`.github/workflows/publish-xserver-image.yml`, named **XServer Docker Image**.
+
 ## One-time setup
 
 1. On Docker Hub, create `asset-library` in your account and explicitly select
