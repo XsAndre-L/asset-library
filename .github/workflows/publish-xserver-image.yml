@@ -1,4 +1,4 @@
-name: Publish XServer Docker Image
+name: XServer Docker Image
 
 on:
   push:
