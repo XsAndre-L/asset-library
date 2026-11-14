@@ -65,7 +65,6 @@
 
   select {
     width: 100%;
-    min-height: 2.75rem;
     min-width: var(--select-min-width, 13rem);
     border: 1px solid var(--borderHoverColor);
     border-radius: 10px;
@@ -73,7 +72,7 @@
     color: var(--app-text);
     font: inherit;
     line-height: 1.2;
-    padding: 0;
+    padding: 0.5rem 2rem 0.5rem 0.75rem;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
