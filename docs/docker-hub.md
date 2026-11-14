@@ -16,7 +16,7 @@ Publishing does not restart or deploy an XServer service.
    `DOCKERHUB_REPOSITORY` (the full name, such as `your-docker-id/asset-library`).
    Add a repository secret `DOCKERHUB_TOKEN` containing the access token.
 4. Enable GitHub Actions for the fork if disabled. Push to `xserver` and watch
-   **Actions > Publish XServer image to Docker Hub**. If a run failed because
+   **Actions > Publish XServer Docker Image**. If a run failed because
    settings were missing, configure them and rerun that failed run.
 
 The manual trigger is also defined, but GitHub normally exposes manual dispatch
