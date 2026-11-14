@@ -17,6 +17,7 @@
 <style>
   .search-field {
     width: 100%;
+    height: calc(1.2em + 1rem + 2px);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
