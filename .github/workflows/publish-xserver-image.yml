@@ -32,7 +32,7 @@ jobs:
             try {
               const { data } = await github.request(endpoint);
               if (data.visibility !== 'private') {
-                throw new Error('The existing GHCR package must be private before publishing.');
+                throw new Error('Expected private GHCR package; API reported visibility: ' + JSON.stringify(data.visibility) + '; response fields: ' + Object.keys(data).join(', '));
               }
             } catch (error) {
               if (error.status !== 404) throw error;
@@ -78,6 +78,6 @@ jobs:
           script: |
             const { data } = await github.request(process.env.PACKAGE_ENDPOINT);
             if (data.visibility !== 'private') {
-              throw new Error('GHCR package visibility is not private. Check package settings.');
+              throw new Error('Expected private GHCR package; API reported visibility: ' + JSON.stringify(data.visibility) + '; response fields: ' + Object.keys(data).join(', '));
             }
             core.info(`Verified private package: ${data.name}`);
