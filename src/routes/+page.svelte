@@ -32,7 +32,6 @@
     licenses: "licenses",
     sort: "sort",
   } as const;
-  const GITHUB_REPO_URL = "https://github.com/Kellojo/asset-library";
   const SORT_MODE_OPTIONS = [
     { value: "best-match", label: "Best Match" },
     { value: "newest", label: "Newest" },
@@ -429,11 +428,6 @@
 
   function toggleTheme(): void {
     applyTheme(themeMode === "dark" ? "light" : "dark");
-  }
-
-  function openGitHubRepo(): void {
-    if (!browser) return;
-    globalThis.open(GITHUB_REPO_URL, "_blank", "noopener,noreferrer");
   }
 
   function onWindowScroll(): void {
@@ -1021,11 +1015,6 @@
           height="1rem"
           aria-hidden="true"
         />
-      </Button>
-
-      <Button onclick={openGitHubRepo} title="Open repository on GitHub">
-        <Icon icon="mdi:github" width="1rem" height="1rem" aria-hidden="true" />
-        View on GitHub
       </Button>
 
       <Button
