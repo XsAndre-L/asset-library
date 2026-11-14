@@ -73,7 +73,7 @@
     color: var(--app-text);
     font: inherit;
     line-height: 1.2;
-    padding: 0.5rem 2rem 0.5rem 0.75rem;
+    padding: 0;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;

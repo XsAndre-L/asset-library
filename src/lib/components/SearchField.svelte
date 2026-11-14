@@ -24,7 +24,7 @@
     gap: 0.25rem;
     border-radius: 10px;
     border: 1px solid var(--borderHoverColor);
-    padding: 0.5rem 0.75rem;
+    padding: 0;
     background: var(--surface-inset);
   }
 
