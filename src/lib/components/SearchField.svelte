@@ -17,14 +17,14 @@
 <style>
   .search-field {
     width: 100%;
-    min-height: 2.3rem;
+    min-height: 2.75rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 0.25rem;
     border-radius: 10px;
     border: 1px solid var(--borderHoverColor);
-    padding: 0.5rem;
+    padding: 0.5rem 0.75rem;
     background: var(--surface-inset);
   }
 
@@ -33,10 +33,11 @@
     outline: none;
     background: transparent;
     color: var(--app-text);
-    padding: 0.25rem;
+    padding: 0;
     min-width: 7rem;
     flex: 1;
     font: inherit;
+    line-height: 1.2;
   }
 
   input::-webkit-search-decoration,

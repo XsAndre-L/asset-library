@@ -65,6 +65,7 @@
 
   select {
     width: 100%;
+    min-height: 2.75rem;
     min-width: var(--select-min-width, 13rem);
     border: 1px solid var(--borderHoverColor);
     border-radius: 10px;
